@@ -1,0 +1,7 @@
+sankya a;
+sankya b;
+sankya c;
+a = 25;
+b = a / 10;
+c = a % 10;
+a = c * 10 + b;

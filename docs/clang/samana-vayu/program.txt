@@ -167,3 +167,17 @@ type_the_number(age * 7);
 
 variable:
 age Output
+
+---
+13
+
+sankya a;
+sankya b;
+sankya c;
+a = 25;
+b = a / 10;
+c = a % 10;
+a = c * 10 + b;
+
+variable:
+a b c
