@@ -1,7 +1,11 @@
-sankya a;
-sankya b;
-a = 5;
-b = 7;
-a = a + b;
-b = a - b;
-a = a - b;
+sankya age;
+age = 21;
+type_the_number(age * 2);
+age = 2 * age - 1;
+type_the_number(age + 1);
+age = age / 4;
+type_the_number(age * 2 + 1);
+age = age % 7;
+type_the_number(age);
+age = age % 5;
+type_the_number(age * 7);
