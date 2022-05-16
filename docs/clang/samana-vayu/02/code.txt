@@ -1,0 +1,8 @@
+sankya a;
+sankya b;
+sankya c;
+a = 3;
+b = 2;
+a = b + 20;
+b = a * 2;
+c = a + b;

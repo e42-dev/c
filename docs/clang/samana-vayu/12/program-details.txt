@@ -1,0 +1,51 @@
+title:
+Walk-through C variable and operators 12
+
+
+id:
+c-variable-operators-walkthrough-12
+
+
+explaination:
+Walk-through the sample code.
+
+
+program:
+01 #include "భవిష్యత్తులో.నేను"
+02
+03 START
+04 
+05   sankya age;
+06   age = 21;
+07   type_the_number(age * 2);
+08   age = 2 * age - 1;
+09   type_the_number(age + 1);
+10   age = age / 4;
+11   type_the_number(age * 2 + 1);
+12   age = age % 7;
+13   type_the_number(age);
+14   age = age % 5;
+15   type_the_number(age * 7);
+16
+17 STOP
+18
+
+
+trace_variables:
+age Output
+
+
+walkthrough:
+e42_walkthrough.setup.push([
+  {variable: "age", line: 6, answer: 21},
+  {variable: "Output", line:7, answer: 42},
+  {variable: "age", line: 8, answer: 41},
+  {variable: "Output", line:9, answer: 42},
+  {variable: "age", line: 10, answer: 10},
+  {variable: "Output", line:11, answer: 21},
+  {variable: "age", line: 12, answer: 3},
+  {variable: "Output", line:13, answer: 3},
+  {variable: "age", line: 14, answer: 3},
+  {variable: "Output", line:15, answer: 21},
+  {line:17}
+])

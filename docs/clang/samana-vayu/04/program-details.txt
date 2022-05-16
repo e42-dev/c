@@ -1,0 +1,50 @@
+title:
+Walk-through C variable and operators 04
+
+
+id:
+c-variable-operators-walkthrough-04
+
+
+explaination:
+Walk-through the sample code.
+
+
+program:
+01 #include "భవిష్యత్తులో.నేను"   
+02
+03 START
+04
+05   sankya a;
+06   a = 2;
+07   a = 2 * a;
+08   a = 2 * a;
+09   a = 2 * a;
+10   a = 2 * a;
+11   a = 2 * a;
+12   a = 2 * a;
+13   a = 2 * a;
+14   a = 2 * a;
+15
+16 STOP
+17
+
+
+trace_variables:
+a
+
+
+walkthrough:
+e42_walkthrough.setup.push([
+  {variable: "a", line: 6, answer: 2},
+  {variable: "a", line: 7, answer: 4},
+  {variable: "a", line: 8, answer: 8},
+  {variable: "a", line: 9, answer: 16},
+  {variable: "a", line: 10, answer: 32},
+  {variable: "a", line: 11, answer: 64},
+  {variable: "a", line: 12, answer: 128},
+  {variable: "a", line: 13, answer: 256},
+  {variable: "a", line: 14, answer: 512},
+  {line: 16}
+])  
+

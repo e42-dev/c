@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Walk-through C variable and operators 04</title> 
+    <script type="text/javascript" src="https://e42.dev/c/assets/scripts/e42_all_min.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://e42.dev/c/assets/css/e42_all_min.css"></link>
+
+    <style type='text/css'>
+     ol.interactivities > li {
+       list-style: none;
+       margin-bottom: 2em;
+     }
+     .problemheading {
+       font-size: 1.4em;
+       font-weight: bold;
+       font-family: monospace;
+       border-top: thin dotted black;
+       padding-top: 0.4em;
+     }
+     body {
+       margin-left: 2em;
+       margin-right: 2em;
+       overflow-y: visible;
+       font-size: x-large;
+     }
+    </style>
+  </head>
+ 
+  <body>
+    <ol class='interactivities' id='interactivities'>
+      <li title='c-variable-operators-walkthrough-04' id='c-variable-operators-walkthrough-04'>
+        <div class='hc-included'>
+          <div>
+            <p>Walk-through the sample code.</p>
+            <div class='e42_walkthrough'>
+              <pre>
+01 #include "భవిష్యత్తులో.నేను"   
+02
+03 START
+04
+05   sankya a;
+06   a = 2;
+07   a = 2 * a;
+08   a = 2 * a;
+09   a = 2 * a;
+10   a = 2 * a;
+11   a = 2 * a;
+12   a = 2 * a;
+13   a = 2 * a;
+14   a = 2 * a;
+15
+16 STOP
+17
+
+            </pre>
+            <table style="font-size:x-large">
+              <tr>
+<th>a</th>
+
+              </tr>
+            </table>
+            <script>
+e42_walkthrough.setup.push([
+  {variable: "a", line: 6, answer: 2},
+  {variable: "a", line: 7, answer: 4},
+  {variable: "a", line: 8, answer: 8},
+  {variable: "a", line: 9, answer: 16},
+  {variable: "a", line: 10, answer: 32},
+  {variable: "a", line: 11, answer: 64},
+  {variable: "a", line: 12, answer: 128},
+  {variable: "a", line: 13, answer: 256},
+  {variable: "a", line: 14, answer: 512},
+  {line: 16}
+])  
+
+              </script>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <div class='vstreport'></div>
+  </body>
+</html>
