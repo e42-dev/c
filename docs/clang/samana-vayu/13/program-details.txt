@@ -11,20 +11,24 @@ Walk-through the sample code.
 
 
 program:
-01 #include "భవిష్యత్తులో.నేను"   
-02
-03 START
-04
-05   sankya a;
-06   sankya b;
-07   sankya c;
-08   a = 25;
-09   b = a / 10;
-10   c = a % 10;
-11   a = c * 10 + b;
-12
-13 STOP
-14
+01   #include "భవిష్యత్తులో.నేను"
+02   
+03   sankya compute_square(sankya num);
+04   
+05   START
+06   
+07     sankya a;
+08     a = compute_square(2);
+09     a = compute_square(a);
+10   
+11   STOP
+12   
+13   sankya compute_square(sankya num)
+14   {
+15     sankya result;
+16     result = num * num;
+17     return result;
+18   }
 
 
 trace_variables:
