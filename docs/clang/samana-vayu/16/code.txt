@@ -1,0 +1,20 @@
+#include "భవిష్యత్తులో.నేను"
+
+gadidha_guddu type_square(sankya num);
+
+START
+
+  sankya a;
+  a = 5;
+  type_square(a + 5);
+  a = a * a;
+  type_square(a + 75);
+
+STOP
+
+gadidha_guddu type_square(sankya num)
+{
+  sankya result;
+  result = num * num;
+  type_the_number(result);
+}

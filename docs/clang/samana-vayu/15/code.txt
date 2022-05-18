@@ -1,0 +1,19 @@
+#include "భవిష్యత్తులో.నేను"
+
+gadidha_guddu type_pattern();
+
+START
+
+  type_pattern();
+
+STOP
+
+gadidha_guddu type_pattern()
+{
+  type_the_number(1);
+  type_the_enter_key();
+  type_the_number(12);
+  type_the_enter_key();
+  type_the_number(123);
+  type_the_enter_key();
+}

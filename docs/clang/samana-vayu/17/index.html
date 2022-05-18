@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Walk-through C functions 17</title> 
+    <script type="text/javascript" src="https://e42.dev/c/assets/scripts/e42_all_min.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://e42.dev/c/assets/css/e42_all_min.css"></link>
+
+    <style type='text/css'>
+     ol.interactivities > li {
+       list-style: none;
+       margin-bottom: 2em;
+     }
+     .problemheading {
+       font-size: 1.4em;
+       font-weight: bold;
+       font-family: monospace;
+       border-top: thin dotted black;
+       padding-top: 0.4em;
+     }
+     body {
+       margin-left: 2em;
+       margin-right: 2em;
+       overflow-y: visible;
+       font-size: x-large;
+     }
+    </style>
+  </head>
+ 
+  <body>
+    <ol class='interactivities' id='interactivities'>
+      <li title='c-functions-walkthrough-17' id='c-functions-walkthrough-17'>
+        <div class='hc-included'>
+          <div>
+            <p>Walk-through the sample code.</p>
+            <div class='e42_walkthrough'>
+              <pre>
+1   #include "భవిష్యత్తులో.నేను"
+02   
+03   START
+04   
+05     sankya a;
+06     type_the_number(42);
+07     type_the_number(39+3);
+08     type_the_sentence("39+3");
+09     a = 5;
+10     type_the_number(a + 5);
+11     a = a + 20;
+12     type_the_sentence("a + 5");
+13   
+14   STOP
+15
+
+            </pre>
+            <table style="font-size:x-large">
+              <tr>
+<th>a</th>
+<th>Output</th>
+
+              </tr>
+            </table>
+              <script type='text/javascript'>//<![CDATA[
+e42_walkthrough.setup.push([
+  {variable: "Output", line: 6, answer: 42},
+  {variable: "Output", line: 7, answer: 42},
+  {variable: "Output", line: 8, answer: "39+3"},
+  {variable: "a", line: 9, answer: 5},
+  {variable: "Output", line: 10, answer: 10},
+  {variable: a, line: 11, answer: 25},
+  {variable: "Output", line: 12, answer: "a + 5"},
+  {line:14}
+])
+              //]]> </script> 
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <div class='vstreport'></div>
+  </body>
+</html>

@@ -206,3 +206,78 @@ sankya compute_square(sankya num)
 
 variable:
 a num result
+
+---
+15
+
+#include "భవిష్యత్తులో.నేను"
+
+gadidha_guddu type_pattern();
+
+START
+
+  type_pattern();
+
+STOP
+
+gadidha_guddu type_pattern()
+{
+  type_the_number(1);
+  type_the_enter_key();
+  type_the_number(12);
+  type_the_enter_key();
+  type_the_number(123);
+  type_the_enter_key();
+}
+
+variable:
+Output
+
+---
+
+16
+
+#include "భవిష్యత్తులో.నేను"
+
+gadidha_guddu type_square(sankya num);
+
+START
+
+  sankya a;
+  a = 5;
+  type_square(a + 5);
+  a = a * a;
+  type_square(a + 75);
+
+STOP
+
+gadidha_guddu type_square(sankya num)
+{
+  sankya result;
+  result = num * num;
+  type_the_number(result);
+}
+
+variable:
+a num result Output
+
+---
+17
+
+#include "భవిష్యత్తులో.నేను"
+
+START
+
+  sankya a;
+  type_the_number(42);
+  type_the_number(39+3);
+  type_the_sentence("39+3");
+  a = 5;
+  type_the_number(a + 5);
+  a = a + 20;
+  type_the_sentence("a + 5");
+
+STOP
+
+variable:
+a Output

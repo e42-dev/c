@@ -1,0 +1,56 @@
+title:
+Walk-through C functions 16
+
+
+id:
+c-functions-walkthrough-16
+
+
+explaination:
+Walk-through the sample code.
+
+
+program:
+01   #include "భవిష్యత్తులో.నేను"
+02   
+03   gadidha_guddu type_square(sankya num);
+04   
+05   START
+06   
+07     sankya a;
+08     a = 5;
+09     type_square(a + 5);
+10     a = a * a;
+11     type_square(a + 75);
+12   
+13   STOP
+14   
+15   gadidha_guddu type_square(sankya num)
+16   {
+17     sankya result;
+18     result = num * num;
+19     type_the_number(result);
+20   }
+21
+
+
+trace_variables:
+a num result Output
+
+
+walkthrough:
+e42_walkthrough.setup.push([
+  {variable: "a", line: 8, answer: 2},
+  {gotoline: 16, line: 9},
+  {variable: "num", line: 16, answer: 10},
+  {variable: "result", line: 18, answer: 100},
+  {variable: "Output", line: 19, answer: 100},
+  {gotoline: 10, line: 19},
+  {variable: "a", line: 10, answer: 25},
+  {gotoline: 16, line: 11},
+  {variable: "num", line: 16, answer: 100},
+  {variable: "result", line: 18, answer: 10000},
+  {variable: "Output", line: 19, answer: 10000},
+  {gotoline: 16, line: 12},
+  {line:13}
+])

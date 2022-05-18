@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Walk-through C functions 16</title> 
+    <script type="text/javascript" src="https://e42.dev/c/assets/scripts/e42_all_min.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://e42.dev/c/assets/css/e42_all_min.css"></link>
+
+    <style type='text/css'>
+     ol.interactivities > li {
+       list-style: none;
+       margin-bottom: 2em;
+     }
+     .problemheading {
+       font-size: 1.4em;
+       font-weight: bold;
+       font-family: monospace;
+       border-top: thin dotted black;
+       padding-top: 0.4em;
+     }
+     body {
+       margin-left: 2em;
+       margin-right: 2em;
+       overflow-y: visible;
+       font-size: x-large;
+     }
+    </style>
+  </head>
+ 
+  <body>
+    <ol class='interactivities' id='interactivities'>
+      <li title='c-functions-walkthrough-16' id='c-functions-walkthrough-16'>
+        <div class='hc-included'>
+          <div>
+            <p>Walk-through the sample code.</p>
+            <div class='e42_walkthrough'>
+              <pre>
+01   #include "భవిష్యత్తులో.నేను"
+02   
+03   gadidha_guddu type_square(sankya num);
+04   
+05   START
+06   
+07     sankya a;
+08     a = 5;
+09     type_square(a + 5);
+10     a = a * a;
+11     type_square(a + 75);
+12   
+13   STOP
+14   
+15   gadidha_guddu type_square(sankya num)
+16   {
+17     sankya result;
+18     result = num * num;
+19     type_the_number(result);
+20   }
+21
+
+            </pre>
+            <table style="font-size:x-large">
+              <tr>
+<th>a</th>
+<th>num</th>
+<th>result</th>
+<th>Output</th>
+
+              </tr>
+            </table>
+              <script type='text/javascript'>//<![CDATA[
+e42_walkthrough.setup.push([
+  {variable: "a", line: 8, answer: 2},
+  {gotoline: 16, line: 9},
+  {variable: "num", line: 16, answer: 10},
+  {variable: "result", line: 18, answer: 100},
+  {variable: "Output", line: 19, answer: 100},
+  {gotoline: 10, line: 19},
+  {variable: "a", line: 10, answer: 25},
+  {gotoline: 16, line: 11},
+  {variable: "num", line: 16, answer: 100},
+  {variable: "result", line: 18, answer: 10000},
+  {variable: "Output", line: 19, answer: 10000},
+  {gotoline: 16, line: 12},
+  {line:13}
+])
+              //]]> </script> 
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <div class='vstreport'></div>
+  </body>
+</html>

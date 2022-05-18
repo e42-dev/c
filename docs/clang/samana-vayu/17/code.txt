@@ -1,0 +1,14 @@
+#include "భవిష్యత్తులో.నేను"
+
+START
+
+  sankya a;
+  type_the_number(42);
+  type_the_number(39+3);
+  type_the_sentence("39+3");
+  a = 5;
+  type_the_number(a + 5);
+  a = a + 20;
+  type_the_sentence("a + 5");
+
+STOP

@@ -1,0 +1,45 @@
+title:
+Walk-through C functions 17
+
+
+id:
+c-functions-walkthrough-17
+
+
+explaination:
+Walk-through the sample code.
+
+
+program:
+1   #include "భవిష్యత్తులో.నేను"
+02   
+03   START
+04   
+05     sankya a;
+06     type_the_number(42);
+07     type_the_number(39+3);
+08     type_the_sentence("39+3");
+09     a = 5;
+10     type_the_number(a + 5);
+11     a = a + 20;
+12     type_the_sentence("a + 5");
+13   
+14   STOP
+15
+
+
+trace_variables:
+a Output
+
+
+walkthrough:
+e42_walkthrough.setup.push([
+  {variable: "Output", line: 6, answer: 42},
+  {variable: "Output", line: 7, answer: 42},
+  {variable: "Output", line: 8, answer: "39+3"},
+  {variable: "a", line: 9, answer: 5},
+  {variable: "Output", line: 10, answer: 10},
+  {variable: a, line: 11, answer: 25},
+  {variable: "Output", line: 12, answer: "a + 5"},
+  {line:14}
+])
