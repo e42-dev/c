@@ -47,9 +47,9 @@ html_template_part_3 = """
 {variables}
               </tr>
             </table>
-            <script>
+              <script type='text/javascript'>//<![CDATA[
 {walkthrough}
-              </script>
+              //]]> </script> 
             </div>
           </div>
         </div>
