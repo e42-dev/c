@@ -1,18 +1,19 @@
 #include "భవిష్యత్తులో.నేను"
 
-sankya compute_square(sankya num);
+gadidha_guddu type_pattern();
 
 START
 
-  sankya a;
-  a = compute_square(2);
-  a = compute_square(a);
+  type_pattern();
 
 STOP
 
-sankya compute_square(sankya num)
+gadidha_guddu type_pattern()
 {
-  sankya result;
-  result = num * num;
-  return result;
+  type_the_number(1);
+  type_the_enter_key();
+  type_the_number(12);
+  type_the_enter_key();
+  type_the_number(123);
+  type_the_enter_key();
 }
