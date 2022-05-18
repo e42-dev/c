@@ -14,9 +14,9 @@
 + [11](../clang/samana-vayu/11)
 + [12](../clang/samana-vayu/12)
 + [13](../clang/samana-vayu/13)
-+ [13](../clang/samana-vayu/14)
-+ [13](../clang/samana-vayu/15)
-+ [13](../clang/samana-vayu/16)
++ [14](../clang/samana-vayu/14)
++ [15](../clang/samana-vayu/15)
++ [16](../clang/samana-vayu/16)
 
 ### System Internals
 [Fundamentals of Computing](https://www.figma.com/proto/VRgWntdUUcOCMnhnjuYXlG/Fundamentals-of-Computing?node-id=102%3A3&scaling=scale-down-width&hide-ui=1)
