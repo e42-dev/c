@@ -1,9 +1,9 @@
 title:
-Walk-through C functions 16
+Walk-through C functions 15
 
 
 id:
-c-functions-walkthrough-16
+c-functions-walkthrough-15
 
 
 explaination:
