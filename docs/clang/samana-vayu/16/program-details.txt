@@ -40,7 +40,7 @@ a num result Output
 
 walkthrough:
 e42_walkthrough.setup.push([
-  {variable: "a", line: 8, answer: 2},
+  {variable: "a", line: 8, answer: 5},
   {gotoline: 16, line: 9},
   {variable: "num", line: 16, answer: 10},
   {variable: "result", line: 18, answer: 100},
@@ -51,6 +51,6 @@ e42_walkthrough.setup.push([
   {variable: "num", line: 16, answer: 100},
   {variable: "result", line: 18, answer: 10000},
   {variable: "Output", line: 19, answer: 10000},
-  {gotoline: 16, line: 12},
+  {gotoline: 12, line: 19},
   {line:13}
 ])
