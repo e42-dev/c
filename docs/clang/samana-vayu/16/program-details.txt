@@ -1,9 +1,9 @@
 title:
-Walk-through C functions 16
+Walk-through C functions 15
 
 
 id:
-c-functions-walkthrough-16
+c-functions-walkthrough-15
 
 
 explaination:
@@ -13,44 +13,40 @@ Walk-through the sample code.
 program:
 01   #include "భవిష్యత్తులో.నేను"
 02   
-03   gadidha_guddu type_square(sankya num);
+03   sankya compute_square(sankya num);
 04   
 05   START
 06   
 07     sankya a;
-08     a = 5;
-09     type_square(a + 5);
-10     a = a * a;
-11     type_square(a + 75);
+08     a = compute_square(2);
+09     a = compute_square(a);
+10   
+11   STOP
 12   
-13   STOP
-14   
-15   gadidha_guddu type_square(sankya num)
-16   {
-17     sankya result;
-18     result = num * num;
-19     type_the_number(result);
-20   }
-21
+13   sankya compute_square(sankya num)
+14   {
+15     sankya result;
+16     result = num * num;
+17     return result;
+18   }
+19
 
 
 trace_variables:
-a num result Output
+a num result
 
 
 walkthrough:
 e42_walkthrough.setup.push([
-  {variable: "a", line: 8, answer: 5},
-  {gotoline: 16, line: 9},
-  {variable: "num", line: 16, answer: 10},
-  {variable: "result", line: 18, answer: 100},
-  {variable: "Output", line: 19, answer: 100},
-  {gotoline: 10, line: 19},
-  {variable: "a", line: 10, answer: 25},
-  {gotoline: 16, line: 11},
-  {variable: "num", line: 16, answer: 100},
-  {variable: "result", line: 18, answer: 10000},
-  {variable: "Output", line: 19, answer: 10000},
-  {gotoline: 12, line: 19},
-  {line:13}
+  {gotoline: 14, line: 8},
+  {variable: "num", line: 14, answer: 2},
+  {variable: "result", line: 16, answer: 4},
+  {gotoline: 8, line: 17},
+  {variable: "a", line: 8, answer: 4},
+  {gotoline: 14, line: 9},
+  {variable: "num", line: 14, answer: 4},
+  {variable: "result", line: 16, answer: 16},
+  {gotoline: 9, line: 17},
+  {variable: "a", line: 9, answer: 16},
+  {line:11}
 ])
