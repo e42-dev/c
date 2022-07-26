@@ -1,5 +1,9 @@
 # Students generated images using C code
 
+# CSE-1 and CSE-2 students creations
+
+![](cse-1and2.gif)
+
 ## 01
 ![](output-image-01.png)
 
