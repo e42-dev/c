@@ -1,4 +1,14 @@
 # Students generated images using C code
 
-<img src="output_image_01.bmp" alt="code generated using C" width="800"/>
+## 01
+![](output-image-01.png)
+
+## 02
+![](output-image-02.png)
+
+## 03
+![](output-image-03.png)
+
+## 04
+![](output-image-04.png)
 
