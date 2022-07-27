@@ -4,6 +4,10 @@
 
 ![](cse-1and2.gif)
 
+# CSD and CSM students creations
+
+![](csmandcsd.gif)
+
 ## 01
 ![](output-image-01.png)
 
@@ -39,3 +43,15 @@
 
 ## 12
 ![](output-image-12.png)
+
+## 13
+![](output-image-13.png)
+
+## 14
+![](output-image-14.png)
+
+## 15
+![](output-image-15.png)
+
+## 16
+![](output-image-16.png)
