@@ -31,31 +31,35 @@
   
   <body>
     <ol class='interactivities' id='interactivities'>
- <li title='ebook-bc-3-ch07-sec01-objectdiagram-1' id='ebook-bc-3-ch07-sec01-objectdiagram-1'><div class='hc-included'>
+ <li title='ebook-bc-3-ch07-sec01-objectdiagram-2' id='ebook-bc-3-ch07-sec01-objectdiagram-2'><div class='hc-included'>
  <div>
-   <p>A simulation uses a pointer to count windows in different rooms. What happens when the following code is executed?</p> 
+   <p>Here, we add another room_loc to the code of the preceding problem. What happens when the following code is executed?</p> 
    <pre>
- int kitchen = 0;
- int bedroom = 0;
- int* pointer = &amp;kitchen; <span class='hc-circled-number'>➊</span>
- *pointer++; <span class='hc-circled-number'>➋</span>
- pointer = &amp;bedroom; <span class='hc-circled-number'>➌</span>
- *pointer++; <span class='hc-circled-number'>➍</span>
+ int kitchen = 1;
+ int bedroom = 1;
+ int* room_loc;
+ int* p2;
+ room_loc = &amp;bedroom;
+ p2 = room_loc; <span class='hc-circled-number'>➊</span>
+ *p2 = 5; <span class='hc-circled-number'>➋</span> // ACTUAL_VALUE(p2) = 5;
+ room_loc = &amp;kitchen; <span class='hc-circled-number'>➌</span>
+ *room_loc = *p2; <span class='hc-circled-number'>➍</span> // ACTUAL_VALUE(room_loc) = ACTUAL_VALUE(p2);
  </pre> 
    <div class='horstmann_objectdiagram'>
      <script type='text/javascript'>//<![CDATA[
  (function()
  {
-   var kitchen = [0, 0, 'kitchen', '0'];
-   var bedroom = [0, 1, 'bedroom', '0'];
-   var pointer = [0, 2, 'pointer', ''];
+   var kitchen = [0, 0, 'kitchen', '1'];
+   var bedroom = [0, 1, 'bedroom', '1'];
+   var room_loc = [0, 2, 'room_loc', bedroom];
+   var p2 = [0, 3, 'p2', ''];
    horstmann_objectdiagram.setup.push({
-     show: [pointer, kitchen, bedroom],
+     show: [room_loc, p2, kitchen, bedroom],
      instructions: [
-       { set: pointer, value: kitchen, description: 'Initialize the pointer variable.' },
-       { set: kitchen, value: 1, description: 'Increment the counter.' },
-       { set: pointer, value: bedroom, description: 'Update the pointer variable.' },
-       { set: bedroom, value: 1, description: 'Increment the counter.' },
+       { set: p2, value: bedroom, description: 'Initialize the <code>p2</code> variable.' },
+       { set: bedroom, value: 5, description: 'Update the correct variable.' },
+       { set: room_loc, value: kitchen, description: 'Update the <code>room_loc</code> variable.' },
+       { set: kitchen, value: 5, description: 'Update the correct variable.' },
  ]})})() 
     //]]>
      </script> 
@@ -66,3 +70,4 @@
    <div class='vstreport'></div>
  </body>
  </html>
+ 

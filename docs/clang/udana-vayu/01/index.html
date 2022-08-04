@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Walk-through C variable and operators 10</title> 
+    <script type="text/javascript" src="https://e42.dev/c/assets/scripts/e42_all_min_v2.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://e42.dev/c/assets/css/e42_all_min_v2.css"></link>
+
+    <!-- Source: https://www.interactivities.ws/script/horstmann_all_min.js -->
+    <style type='text/css'>
+     ol.interactivities > li {
+       list-style: none;
+       margin-bottom: 2em;
+     }
+     .problemheading {
+       font-size: 1.4em;
+       font-weight: bold;
+       font-family: monospace;
+       border-top: thin dotted black;
+       padding-top: 0.4em;
+     }
+     body {
+       margin-left: 2em;
+       margin-right: 2em;
+       overflow-y: visible;
+       font-size: x-large;
+     }
+    </style>
+  </head>
+ 
+  
+  <body>
+    <ol class='interactivities' id='interactivities'>
+ <li title='ebook-bc-3-ch07-sec01-objectdiagram-1' id='ebook-bc-3-ch07-sec01-objectdiagram-1'><div class='hc-included'>
+ <div>
+   <p>A simulation uses a room_loc to count windows in different rooms. What happens when the following code is executed?</p> 
+   <pre>
+ int kitchen = 0;
+ int bedroom = 0;
+ int* room_loc; // Read this as: int POINTER room_loc;
+ room_loc = &amp;kitchen; <span class='hc-circled-number'>➊</span>
+ *room_loc++; <span class='hc-circled-number'>➋</span>
+ room_loc = &amp;bedroom; <span class='hc-circled-number'>➌</span>
+ *room_loc++; <span class='hc-circled-number'>➍</span>
+ </pre> 
+   <div class='horstmann_objectdiagram'>
+     <script type='text/javascript'>//<![CDATA[
+ (function()
+ {
+   var kitchen = [0, 0, 'kitchen', '0'];
+   var bedroom = [0, 1, 'bedroom', '0'];
+   var room_loc = [0, 2, 'room_loc', ''];
+   horstmann_objectdiagram.setup.push({
+     show: [room_loc, kitchen, bedroom],
+     instructions: [
+       { set: room_loc, value: kitchen, description: 'Initialize the room_loc variable.' },
+       { set: kitchen, value: 1, description: 'Increment the counter.' },
+       { set: room_loc, value: bedroom, description: 'Update the room_loc variable.' },
+       { set: bedroom, value: 1, description: 'Increment the counter.' },
+ ]})})() 
+    //]]>
+     </script> 
+   </div> 
+ </div>
+ </div></li>
+ </ol>
+   <div class='vstreport'></div>
+ </body>
+ </html>
