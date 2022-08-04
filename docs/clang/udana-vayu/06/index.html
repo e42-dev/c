@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Walk-through C variable and operators 10</title> 
+    <script type="text/javascript" src="https://e42.dev/c/assets/scripts/e42_all_min_v2.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://e42.dev/c/assets/css/e42_all_min_v2.css"></link>
+
+    <!-- Source: https://www.interactivities.ws/script/horstmann_all_min.js -->
+    <style type='text/css'>
+     ol.interactivities > li {
+       list-style: none;
+       margin-bottom: 2em;
+     }
+     .problemheading {
+       font-size: 1.4em;
+       font-weight: bold;
+       font-family: monospace;
+       border-top: thin dotted black;
+       padding-top: 0.4em;
+     }
+     body {
+       margin-left: 2em;
+       margin-right: 2em;
+       overflow-y: visible;
+       font-size: x-large;
+     }
+    </style>
+  </head>
+ 
+  <body>
+    <ol class='interactivities' id='interactivities'>
+ <li title='ebook-bc-3-ch07-sec02-objectdiagram-3' id='ebook-bc-3-ch07-sec02-objectdiagram-3'><div class='hc-included'>
+ <div>
+   <p>Trace through this code that modifies an array using pointers.</p> 
+   <pre>
+ int numbers[] = { 2, 3, 5, 8 };
+ int* num1_loc, num2_loc;
+ num1_loc = numbers;  <span class='hc-circled-number'>➊</span>
+ num2_loc = numbers + 3; <span class='hc-circled-number'>➋</span>
+ num1_loc++; <span class='hc-circled-number'>➌</span>
+ num2_loc--; <span class='hc-circled-number'>➍</span>
+ *num1_loc = *num2_loc; <span class='hc-circled-number'>➎</span>
+ </pre> 
+   <div class='horstmann_objectdiagram'>
+     <script type='text/javascript'>//<![CDATA[
+ (function()
+ {
+   var numbers = [0, 0, 'numbers', { array: ['2', '3', '5', '8'] }]
+ 
+   var num1_loc = [0.2, 3.7, 'num1_loc', ''];
+   var num2_loc = [0.2, 4.7, 'num2_loc', ''];
+   horstmann_objectdiagram.setup.push({
+     show: [num1_loc, num2_loc, numbers],
+     instructions: [
+       { set: num1_loc, value: [numbers, 0], description: 'Initialize the <code>num1_loc</code> variable.' },
+       { set: num2_loc, value: [numbers, 3], description: 'Initialize the <code>num2_loc</code> variable.' },
+       { set: num1_loc, value: [numbers, 1], description: 'Update the <code>num1_loc</code> variable.' },
+       { set: num2_loc, value: [numbers, 2], description: 'Update the <code>num2_loc</code> variable.' },
+       { set: [numbers, 1], value: 5, description: 'Update the array element.' },
+ ]})})() 
+    //]]>
+     </script> 
+   </div> 
+ </div>
+ </div></li>
+ </ol>
+   <div class='vstreport'></div>
+ </body></html>

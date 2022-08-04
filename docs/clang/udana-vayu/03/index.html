@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Walk-through C variable and operators 10</title> 
+    <script type="text/javascript" src="https://e42.dev/c/assets/scripts/e42_all_min_v2.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://e42.dev/c/assets/css/e42_all_min_v2.css"></link>
+
+    <!-- Source: https://www.interactivities.ws/script/horstmann_all_min.js -->
+    <style type='text/css'>
+     ol.interactivities > li {
+       list-style: none;
+       margin-bottom: 2em;
+     }
+     .problemheading {
+       font-size: 1.4em;
+       font-weight: bold;
+       font-family: monospace;
+       border-top: thin dotted black;
+       padding-top: 0.4em;
+     }
+     body {
+       margin-left: 2em;
+       margin-right: 2em;
+       overflow-y: visible;
+       font-size: x-large;
+     }
+    </style>
+  </head>
+ 
+  
+  <body>
+    <ol class='interactivities' id='interactivities'>
+ <li title='ebook-bc-3-ch07-sec01-rearrange-1' id='ebook-bc-3-ch07-sec01-rearrange-1'><div class='hc-included'>
+ <div>
+   <p>Rearrange the following lines of code so that the pointer <code>p</code> points to the smaller of <code>a</code> and <code>b</code> and then sets that value to zero. Not all lines are useful.</p> 
+   <div class='horstmann_rearrange'>
+     <pre>^int* p;
+ +if (a &lt; b)
+ +{
+ . p = &amp;a;
+ - p = a;
+ - *p = a;
+ .}
+ .else
+ .{
+ . p = &amp;b;
+ - p = b;
+ - *p = b;
+ .}
+ .*p = 0;
+ </pre> 
+   </div> 
+ </div>
+ </div></li>
+ </ol>
+   <div class='vstreport'></div>
+ </body>
+ </html>
+ 
