@@ -37,9 +37,9 @@
    <pre>
  int kitchen = 0;
  int bedroom = 0;
- int* room_loc; // Read this as: int POINTER room_loc;
+ int* room_loc; // int POINTER room_loc;
  room_loc = &amp;kitchen; <span class='hc-circled-number'>➊</span>
- *room_loc++; <span class='hc-circled-number'>➋</span>
+ *room_loc = *room_loc + 1; <span class='hc-circled-number'>➋</span> // ACTUAL_VALUE(room_loc) = ACTUAL_VALUE(room_loc) + 1;
  room_loc = &amp;bedroom; <span class='hc-circled-number'>➌</span>
  *room_loc++; <span class='hc-circled-number'>➍</span>
  </pre> 
