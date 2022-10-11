@@ -37,3 +37,7 @@
 + [04](../clang/udana-vayu/04)
 + [05](../clang/udana-vayu/05)
 + [06](../clang/udana-vayu/06)
+
+### try the program
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=void%20subhankar%28int%20a,%20int%20b,%20int%20c%29%3B%0Aint%20main%28%29%20%7B%0A%0A%20%20subhankar%281,%202,%206%29%3B%0A%20%20return%200%3B%0A%7D%0A%0Avoid%20subhankar%28int%20a,%20int%20b,%20int%20c%29%0A%7B%0A%20%20if%20%28a%20%2B%20b%20%3E%20c%29%20%7B%0A%20%20%20%20printf%28%22Done%5Cn%22%29%3B%0A%20%20%20%20return%3B%0A%20%20%7D%0A%20%20%0A%20%20printf%28%22reduce%20the%20number%20c%3A%20%25d%5Cn%22,%20c%29%3B%0A%20%20c%20%3D%20c%20-%202%3B%0A%20%20a%20%3D%20a%20%2B%201%3B%0A%20%20b%20%3D%20b%20%2B%201%3B%0A%20%20subhankar%28a,%20b,%20c%29%3B%0A%20%20printf%28%22a%20%3D%20%25d%20b%20%3D%20%25d%5Cn%22,%20a,%20b%29%3B%0A%20%20%0A%7D&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
