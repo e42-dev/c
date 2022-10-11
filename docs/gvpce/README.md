@@ -41,3 +41,58 @@
 ### try the program
 
 <iframe width="1024" height="1024" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=void%20subhankar%28int%20a,%20int%20b,%20int%20c%29%3B%0Aint%20main%28%29%20%7B%0A%0A%20%20subhankar%281,%202,%206%29%3B%0A%20%20return%200%3B%0A%7D%0A%0Avoid%20subhankar%28int%20a,%20int%20b,%20int%20c%29%0A%7B%0A%20%20if%20%28a%20%2B%20b%20%3E%20c%29%20%7B%0A%20%20%20%20printf%28%22Done%5Cn%22%29%3B%0A%20%20%20%20return%3B%0A%20%20%7D%0A%20%20%0A%20%20printf%28%22reduce%20the%20number%20c%3A%20%25d%5Cn%22,%20c%29%3B%0A%20%20c%20%3D%20c%20-%202%3B%0A%20%20a%20%3D%20a%20%2B%201%3B%0A%20%20b%20%3D%20b%20%2B%201%3B%0A%20%20subhankar%28a,%20b,%20c%29%3B%0A%20%20printf%28%22a%20%3D%20%25d%20b%20%3D%20%25d%5Cn%22,%20a,%20b%29%3B%0A%20%20%0A%7D&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+```C
+void subhankar(int a, int b, int c);
+int main() {
+
+  subhankar(1, 2, 12);
+  return 0;
+}
+
+void subhankar(int a, int b, int c)
+{
+  int *p;
+  p = malloc(3*sizeof(int));
+  *p = a;
+  *(p+1) = b;
+  *(p+2) = c;
+  
+  
+  if (a + b > c) {
+    printf("Done\n");
+    return;
+  }
+  
+  printf("reduce the number c: %d\n", c);
+  c = c - 2;
+  a = a + 1;
+  b = b + 1;
+  subhankar(a, b, c);
+  printf("a = %d b = %d\n", a, b);
+  
+}
+```
+
+```C
+int* subhankar1(int a[], int length);
+
+int main() {
+  int a[8] = {34, 12, 22, 11, 5, 13, 7, 2};
+  int *p2;
+  p2 = subhankar2(a, 8);
+  free(p2);
+  return 0;
+}
+
+
+int * subhankar2(int a[], int length)
+{
+  int *p;
+  p = malloc(length * sizeof(int));
+  for(int i = 0; i < length; i++) {
+    p[i] = a[i]*2;
+  }
+  return p;
+}
+```
