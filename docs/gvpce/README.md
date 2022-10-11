@@ -40,61 +40,10 @@
 
 ### try the program
 
-<iframe width="1024" height="1024" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=void%20subhankar%28int%20a,%20int%20b,%20int%20c%29%3B%0Aint%20main%28%29%20%7B%0A%0A%20%20subhankar%281,%202,%206%29%3B%0A%20%20return%200%3B%0A%7D%0A%0Avoid%20subhankar%28int%20a,%20int%20b,%20int%20c%29%0A%7B%0A%20%20if%20%28a%20%2B%20b%20%3E%20c%29%20%7B%0A%20%20%20%20printf%28%22Done%5Cn%22%29%3B%0A%20%20%20%20return%3B%0A%20%20%7D%0A%20%20%0A%20%20printf%28%22reduce%20the%20number%20c%3A%20%25d%5Cn%22,%20c%29%3B%0A%20%20c%20%3D%20c%20-%202%3B%0A%20%20a%20%3D%20a%20%2B%201%3B%0A%20%20b%20%3D%20b%20%2B%201%3B%0A%20%20subhankar%28a,%20b,%20c%29%3B%0A%20%20printf%28%22a%20%3D%20%25d%20b%20%3D%20%25d%5Cn%22,%20a,%20b%29%3B%0A%20%20%0A%7D&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+[recursive function](https://pythontutor.com/visualize.html#code=void%20subhankar%28int%20a,%20int%20b,%20int%20c%29%3B%0Aint%20main%28%29%20%7B%0A%0A%20%20subhankar%281,%202,%206%29%3B%0A%20%20return%200%3B%0A%7D%0A%0Avoid%20subhankar%28int%20a,%20int%20b,%20int%20c%29%0A%7B%0A%20%20if%20%28a%20%2B%20b%20%3E%20c%29%20%7B%0A%20%20%20%20printf%28%22Done%5Cn%22%29%3B%0A%20%20%20%20return%3B%0A%20%20%7D%0A%20%20%0A%20%20printf%28%22reduce%20the%20number%20c%3A%20%25d%5Cn%22,%20c%29%3B%0A%20%20c%20%3D%20c%20-%202%3B%0A%20%20a%20%3D%20a%20%2B%201%3B%0A%20%20b%20%3D%20b%20%2B%201%3B%0A%20%20subhankar%28a,%20b,%20c%29%3B%0A%20%20printf%28%22a%20%3D%20%25d%20b%20%3D%20%25d%5Cn%22,%20a,%20b%29%3B%0A%20%20%0A%7D&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false)
 
-```C
-void subhankar(int a, int b, int c);
-int main() {
+[allocate memory for 3 numbers](https://pythontutor.com/render.html#code=void%20subhankar%28int%20a,%20int%20b,%20int%20c%29%3B%0Aint%20main%28%29%20%7B%0A%0A%20%20subhankar%281,%202,%2012%29%3B%0A%20%20return%200%3B%0A%7D%0A%0Avoid%20subhankar%28int%20a,%20int%20b,%20int%20c%29%0A%7B%0A%20%20int%20*p%3B%0A%20%20p%20%3D%20malloc%283*sizeof%28int%29%29%3B%0A%20%20*p%20%3D%20a%3B%0A%20%20*%28p%2B1%29%20%3D%20b%3B%0A%20%20*%28p%2B2%29%20%3D%20c%3B%0A%20%20%0A%20%20%0A%20%20if%20%28a%20%2B%20b%20%3E%20c%29%20%7B%0A%20%20%20%20printf%28%22Done%5Cn%22%29%3B%0A%20%20%20%20return%3B%0A%20%20%7D%0A%20%20%0A%20%20printf%28%22reduce%20the%20number%20c%3A%20%25d%5Cn%22,%20c%29%3B%0A%20%20c%20%3D%20c%20-%202%3B%0A%20%20a%20%3D%20a%20%2B%201%3B%0A%20%20b%20%3D%20b%20%2B%201%3B%0A%20%20subhankar%28a,%20b,%20c%29%3B%0A%20%20printf%28%22a%20%3D%20%25d%20b%20%3D%20%25d%5Cn%22,%20a,%20b%29%3B%0A%20%20%0A%7D&cumulative=false&heapPrimitives=nevernest&mode=edit&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false)
 
-  subhankar(1, 2, 12);
-  return 0;
-}
+[create array and return](https://pythontutor.com/render.html#code=int*%20subhankar2%28int%20a%5B%5D,%20int%20length%29%3B%0A%0Aint%20main%28%29%20%7B%0A%20%20int%20a%5B8%5D%20%3D%20%7B34,%2012,%2022,%2011,%205,%2013,%207,%202%7D%3B%0A%20%20int%20*p2%3B%0A%20%20p2%20%3D%20subhankar2%28a,%208%29%3B%0A%20%20free%28p2%29%3B%0A%20%20return%200%3B%0A%7D%0A%0A%0Aint%20*%20subhankar2%28int%20a%5B%5D,%20int%20length%29%0A%7B%0A%20%20int%20*p%3B%0A%20%20p%20%3D%20malloc%28length%20*%20sizeof%28int%29%29%3B%0A%20%20for%28int%20i%20%3D%200%3B%20i%20%3C%20length%3B%20i%2B%2B%29%20%7B%0A%20%20%20%20p%5Bi%5D%20%3D%20a%5Bi%5D*2%3B%0A%20%20%7D%0A%20%20return%20p%3B%0A%7D&cumulative=false&curInstr=26&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false)
 
-void subhankar(int a, int b, int c)
-{
-  int *p;
-  p = malloc(3*sizeof(int));
-  *p = a;
-  *(p+1) = b;
-  *(p+2) = c;
-  
-  
-  if (a + b > c) {
-    printf("Done\n");
-    return;
-  }
-  
-  printf("reduce the number c: %d\n", c);
-  c = c - 2;
-  a = a + 1;
-  b = b + 1;
-  subhankar(a, b, c);
-  printf("a = %d b = %d\n", a, b);
-  
-}
-```
-
-```C
-int* subhankar2(int a[], int length);
-
-int main() {
-  int a[8] = {34, 12, 22, 11, 5, 13, 7, 2};
-  int *p2;
-  p2 = subhankar2(a, 8);
-  free(p2);
-  return 0;
-}
-
-
-int * subhankar2(int a[], int length)
-{
-  int *p;
-  p = malloc(length * sizeof(int));
-  for(int i = 0; i < length; i++) {
-    p[i] = a[i]*2;
-  }
-  return p;
-}
-```
-
-[try this merge sort](https://pythontutor.com/render.html#code=int*%20subhankar_sort%28int%20a%5B%5D,%20int%20length%29%3B%0Avoid%20print_array%28int%20a%5B%5D,%20int%20length%29%3B%0A%0Avoid%20merge%28int%20part1%5B%5D,%20int%20part1_len,%20%0A%20%20%20%20%20%20%20%20%20%20%20int%20part2%5B%5D,%20int%20part2_len,%20%0A%20%20%20%20%20%20%20%20%20%20%20int%20result%5B%5D%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%0Aint%20main%28%29%20%7B%0A%20%20int%20a%5B4%5D%20%3D%20%7B3,%2012,%202,%2011%7D%3B%0A%20%20int%20*result%3B%0A%20%20result%20%3D%20subhankar_sort%28a,%204%29%3B%0A%20%20print_array%28result,%204%29%3B%0A%20%20free%28result%29%3B%0A%20%20return%200%3B%0A%7D%0A%0A%0Aint%20*%20subhankar_sort%28int%20a%5B%5D,%20int%20length%29%0A%7B%0A%20%20int*%20p,%20part1,%20part2%3B%0A%20%20p%20%3D%20malloc%28length%20*%20sizeof%28int%29%29%3B%20%20%0A%20%20if%20%28length%20%3D%3D%201%29%20%0A%20%20%7B%0A%20%20%20%20p%5B0%5D%20%3D%20a%5B0%5D%3B%0A%20%20%20%20return%20p%3B%0A%20%20%7D%0A%20%20part1%20%3D%20subhankar_sort%28a,%20length/2%29%3B%0A%20%20part2%20%3D%20subhankar_sort%28a%20%2B%20length/2,%20%28length%20-%20length/2%29%29%3B%0A%20%20merge%28part1,%20length/2,%20part2,%20length%20-%20length/2,%20p%29%3B%0A%20%20free%28part1%29%3B%0A%20%20free%28part2%29%3B%0A%20%20return%20p%3B%0A%7D%0A%0A%0Avoid%20print_array%28int%20a%5B%5D,%20int%20length%29%0A%7B%0A%20%20for%28int%20i%20%3D0%3B%20i%20%3C%20length%3B%20i%2B%2B%29%20%0A%20%20%7B%0A%20%20%20%20printf%28%22%25d%20%22,%20a%5Bi%5D%29%3B%0A%20%20%7D%0A%20%20printf%28%22%5Cn%22%29%3B%0A%7D%0A%0Avoid%20merge%28int%20part1%5B%5D,%20int%20part1_len,%20%0A%20%20%20%20%20%20%20%20%20%20%20int%20part2%5B%5D,%20int%20part2_len,%20%0A%20%20%20%20%20%20%20%20%20%20%20int%20result%5B%5D%29%0A%7B%0A%20%20while%28part1_len%20%3E%200%20%26%26%20part2_len%20%3E%200%29%20%7B%0A%20%20%20%20if%20%28*part1%20%3E%20*part2%29%7B%0A%20%20%20%20%20%20*result%20%3D%20*part1%3B%0A%20%20%20%20%20%20part1%20%3D%20part1%20%2B%201%3B%0A%20%20%20%20%20%20result%2B%2B%3B%0A%20%20%20%20%20%20part1_len--%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20*result%20%3D%20*part2%3B%0A%20%20%20%20%20%20part2%20%3D%20part2%20%2B%201%3B%0A%20%20%20%20%20%20result%2B%2B%3B%0A%20%20%20%20%20%20part2_len--%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20%0A%20%20while%28part1_len%20%3E%200%20%29%20%7B%0A%20%20%20%20*result%20%3D%20*part1%3B%0A%20%20%20%20part1%20%3D%20part1%20%2B%201%3B%0A%20%20%20%20part1_len--%3B%0A%20%20%20%20result%2B%2B%3B%0A%20%20%7D%0A%20%20while%28part2_len%20%3E%200%20%29%20%7B%0A%20%20%20%20*result%20%3D%20*part2%3B%0A%20%20%20%20part2%20%3D%20part2%20%2B%201%3B%0A%20%20%20%20part2_len--%3B%0A%20%20%20%20result%2B%2B%3B%0A%20%20%7D%0A%7D&cumulative=false&curInstr=111&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false)
+[try this merge sort](https://pythontutor.com/visualize.html#code=int*%20subhankar_sort%28int%20a%5B%5D,%20int%20length%29%3B%0Avoid%20print_array%28int%20a%5B%5D,%20int%20length%29%3B%0A%0Avoid%20merge%28int%20part1%5B%5D,%20int%20part1_len,%20%0A%20%20%20%20%20%20%20%20%20%20%20int%20part2%5B%5D,%20int%20part2_len,%20%0A%20%20%20%20%20%20%20%20%20%20%20int%20result%5B%5D%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%0Aint%20main%28%29%20%7B%0A%20%20int%20a%5B4%5D%20%3D%20%7B34,%2012,%2022,%2011%7D%3B%0A%20%20int%20*result%3B%0A%20%20result%20%3D%20subhankar_sort%28a,%204%29%3B%0A%20%20print_array%28result,%204%29%3B%0A%20%20free%28result%29%3B%0A%20%20return%200%3B%0A%7D%0A%0A%0Aint%20*%20subhankar_sort%28int%20a%5B%5D,%20int%20length%29%0A%7B%0A%20%20int*%20p,%20part1,%20part2%3B%0A%20%20p%20%3D%20malloc%28length%20*%20sizeof%28int%29%29%3B%20%20%0A%20%20if%20%28length%20%3D%3D%201%29%20%0A%20%20%7B%0A%20%20%20%20p%5B0%5D%20%3D%20a%5B0%5D%3B%0A%20%20%20%20return%20p%3B%0A%20%20%7D%0A%20%20for%28int%20i%20%3D%200%3B%20i%20%3C%20length%3B%20i%2B%2B%29%20%7B%0A%20%20%20%20p%5Bi%5D%20%3D%20a%5Bi%5D%3B%0A%20%20%7D%0A%20%20part1%20%3D%20subhankar_sort%28a,%20length/2%29%3B%0A%20%20part2%20%3D%20subhankar_sort%28a%20%2B%20length/2,%20%28length%20-%20length/2%29%29%3B%0A%20%20merge%28part1,%20length/2,%20part2,%20length%20-%20length/2,%20p%29%3B%0A%20%20free%28part1%29%3B%0A%20%20free%28part2%29%3B%0A%20%20return%20p%3B%0A%7D%0A%0A%0Avoid%20print_array%28int%20a%5B%5D,%20int%20length%29%0A%7B%0A%20%20for%28int%20i%20%3D0%3B%20i%20%3C%20length%3B%20i%2B%2B%29%20%0A%20%20%7B%0A%20%20%20%20printf%28%22%25d%20%22,%20a%5Bi%5D%29%3B%0A%20%20%7D%0A%20%20printf%28%22%5Cn%22%29%3B%0A%7D%0A%0Avoid%20merge%28int%20part1%5B%5D,%20int%20part1_len,%20%0A%20%20%20%20%20%20%20%20%20%20%20int%20part2%5B%5D,%20int%20part2_len,%20%0A%20%20%20%20%20%20%20%20%20%20%20int%20result%5B%5D%29%0A%7B%0A%20%20while%28part1_len%20%3E%200%20%26%26%20part2_len%20%3E%200%29%20%7B%0A%20%20%20%20if%20%28*part1%20%3E%20*part2%29%7B%0A%20%20%20%20%20%20*result%20%3D%20*part1%3B%0A%20%20%20%20%20%20part1%20%3D%20part1%20%2B%201%3B%0A%20%20%20%20%20%20result%2B%2B%3B%0A%20%20%20%20%20%20part1_len--%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20*result%20%3D%20*part2%3B%0A%20%20%20%20%20%20part2%20%3D%20part2%20%2B%201%3B%0A%20%20%20%20%20%20result%2B%2B%3B%0A%20%20%20%20%20%20part2_len--%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20%0A%20%20while%28part1_len%20%3E%200%20%29%20%7B%0A%20%20%20%20*result%20%3D%20*part1%3B%0A%20%20%20%20part1%20%3D%20part1%20%2B%201%3B%0A%20%20%20%20part1_len--%3B%0A%20%20%20%20result%2B%2B%3B%0A%20%20%7D%0A%20%20while%28part2_len%20%3E%200%20%29%20%7B%0A%20%20%20%20*result%20%3D%20*part2%3B%0A%20%20%20%20part2%20%3D%20part2%20%2B%201%3B%0A%20%20%20%20part2_len--%3B%0A%20%20%20%20result%2B%2B%3B%0A%20%20%7D%0A%7D&cumulative=false&heapPrimitives=nevernest&mode=edit&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false)
