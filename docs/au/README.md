@@ -25,3 +25,6 @@
 + [14](../clang/samana-vayu/14)
 + [15](../clang/samana-vayu/15)
 + [16](../clang/samana-vayu/16)  
+
+### Arrays
++ [17 Visualization](https://pythontutor.com/render.html#code=int%20main%28%29%20%0A%7B%0A%20%20int%20i,%20a%5B5%5D%3B%0A%20%20i%20%3D%200%3B%0A%20%20while%20%28i%20%3C%205%29%0A%20%20%7B%0A%20%20%20%20a%5Bi%5D%20%3D%20i%20%2B%201%3B%0A%20%20%20%20i%20%3D%20i%20%2B%201%3B%0A%20%20%7D%0A%20%20return%200%3B%0A%7D&cumulative=false&curInstr=18&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false)  
