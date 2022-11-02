@@ -33,3 +33,6 @@
 
 ### C Language Mind Map
 + [19 clang-map](./clang-map/)  
+
+### Topics covered Mind Map
++ [20 topics map](./topics-covered/)
