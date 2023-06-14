@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.4"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"Coding Bridge Course","children":[{"type":"heading","depth":1,"payload":{"lines":[2,3]},"content":"Concepts","children":[{"type":"list_item","depth":2,"payload":{"lines":[3,4]},"content":"","children":[{"type":"list_item","depth":3,"payload":{"lines":[3,4],"index":0},"content":"0. Course onboarding <a href=\"https://www.youtube.com/watch?v=Dsn1Ixq0FIk&amp;list=PL2JHjjegWZ1Q_QHm8314oF24FBqdBaSuT&amp;index=1\">class</a>"}]},{"type":"list_item","depth":2,"payload":{"lines":[4,5]},"content":"","children":[{"type":"list_item","depth":3,"payload":{"lines":[4,5],"index":1},"content":"1. Let's do the typing <a href=\"https://youtu.be/Dsn1Ixq0FIk?t=1611\">class</a>"}]},{"type":"list_item","depth":2,"payload":{"lines":[5,6]},"content":"","children":[{"type":"list_item","depth":3,"payload":{"lines":[5,6],"index":2},"content":"2. Let's make the computer do the Typing <a href=\"https://www.youtube.com/watch?v=BvLPzPkFurk&amp;list=PL2JHjjegWZ1Q_QHm8314oF24FBqdBaSuT&amp;index=2\">class</a>"}]},{"type":"list_item","depth":2,"payload":{"lines":[6,7]},"content":"","children":[{"type":"list_item","depth":3,"payload":{"lines":[6,7],"index":3},"content":"3. Let's make the computer do some Arithmetic Calculations"}]},{"type":"list_item","depth":2,"payload":{"lines":[7,8]},"content":"","children":[{"type":"list_item","depth":3,"payload":{"lines":[7,8],"index":4},"content":"4. Let's teach the computer some New Commands"}]},{"type":"list_item","depth":2,"payload":{"lines":[8,9]},"content":"","children":[{"type":"list_item","depth":3,"payload":{"lines":[8,9],"index":5},"content":"5. Let's make the computer(LMTC) do some Algebra"}]},{"type":"list_item","depth":2,"payload":{"lines":[9,10]},"content":"","children":[{"type":"list_item","depth":3,"payload":{"lines":[9,10],"index":6},"content":"6. Let's teach the Computer(LTTC) commands which take some Numbers"}]},{"type":"list_item","depth":2,"payload":{"lines":[10,11]},"content":"","children":[{"type":"list_item","depth":3,"payload":{"lines":[10,11],"index":7},"content":"7. LTTC commands which do some Calculations"}]},{"type":"list_item","depth":2,"payload":{"lines":[11,12]},"content":"","children":[{"type":"list_item","depth":3,"payload":{"lines":[11,12],"index":8},"content":"8. Let's tell the computer where to start?"}]},{"type":"list_item","depth":2,"payload":{"lines":[12,13]},"content":"","children":[{"type":"list_item","depth":3,"payload":{"lines":[12,13],"index":9},"content":"9. Let's make the computer behave conditionally"}]},{"type":"list_item","depth":2,"payload":{"lines":[13,14]},"content":"","children":[{"type":"list_item","depth":3,"payload":{"lines":[13,14],"index":10},"content":"10. LMTC get some numbers and sentences from us"}]}]},{"type":"heading","depth":1,"payload":{"lines":[16,17]},"content":"Applications","children":[{"type":"list_item","depth":2,"payload":{"lines":[17,18]},"content":"Passwordless login","children":[{"type":"list_item","depth":3,"payload":{"lines":[18,19]},"content":"email and OTP login"}]},{"type":"list_item","depth":2,"payload":{"lines":[19,20]},"content":"2048 game"}]}]},{})</script>
+</body>
+</html>
