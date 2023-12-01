@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tracing Exercise</title>
+    <style>
+        .correct { color: green; }
+        .incorrect { color: red; }
+        pre {
+            font-size: 1.17em; /* Set the font size to be as big as h3 size */
+        }
+        p {
+            font-size: 1.17em;
+            font-weight: italic;
+        }
+        .answer-input {
+            width: 200px;
+            height: 30px;
+            font-size: 1.17em;
+        }
+        .submit-button {
+            font-size: 1.17em;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Example 1: If-Else Conditional</h3>
+<pre>
+int x = 5;
+int y = 10;
+if (x > y) {
+    x = x + y;
+} else {
+    y = y - x;
+}
+</pre>
+<p>What are the final values of x and y?</p>
+<input type="text" id="answer1" class="answer-input">
+<button onclick="checkAnswer(1, '5 and 5')" class="submit-button">Submit</button>
+<span id="result1"></span>
+
+<h3>Example 2: For Loop</h3>
+<pre>
+int sum = 0;
+for (int i = 1; i <= 5; i++) {
+    sum += i;
+}
+</pre>
+<p>What is the final value of sum?</p>
+<input type="text" id="answer2" class="answer-input">
+<button onclick="checkAnswer(2, 15)" class="submit-button">Submit</button>
+<span id="result2"></span>
+
+<h3>Example 3: While Loop</h3>
+<pre>
+int a = 5;
+while (a > 0) {
+    a--;
+}
+</pre>
+<p>How many iterations does the loop run?</p>
+<input type="text" id="answer3" class="answer-input">
+<button onclick="checkAnswer(3, 5)" class="submit-button">Submit</button>
+<span id="result3"></span>
+<h3>Example 4: Nested Loops</h3>
+<pre>
+int count = 0;
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        count++;
+    }
+}
+</pre>
+<p>What is the final value of count?</p>
+<input type="text" id="answer4" class="answer-input">
+<button onclick="checkAnswer(4, 9)" class="submit-button">Submit</button>
+<span id="result4"></span>
+
+<h3>Example 5: Switch Case</h3>
+<pre>
+int num = 2;
+switch (num) {
+    case 1:
+        num += 5;
+        break;
+    case 2:
+        num += 10;
+        break;
+    default:
+        num += 0;
+}
+</pre>
+<p>What is the final value of num?</p>
+<input type="text" id="answer5" class="answer-input">
+<button onclick="checkAnswer(5, 12)" class="submit-button">Submit</button>
+<span id="result5"></span>
+
+<h3>Example 6: Compound Conditional</h3>
+<pre>
+int a = 10, b = 20;
+if (a > 5 && b < 25) {
+    a = b;
+}
+</pre>
+<p>What is the final value of a?</p>
+<input type="text" id="answer6" class="answer-input">
+<button onclick="checkAnswer(6, 20)" class="submit-button">Submit</button>
+<span id="result6"></span>
+
+<h3>Example 7: Do-While Loop</h3>
+<pre>
+int i = 0;
+do {
+    i += 2;
+} while (i < 10);
+</pre>
+<p>What is the final value of i?</p>
+<input type="text" id="answer7" class="answer-input">
+<button onclick="checkAnswer(7, 10)" class="submit-button">Submit</button>
+<span id="result7"></span>
+
+<h3>Example 8: Combination of For Loop and If Statement</h3>
+<pre>
+for (int i = 1; i <= 10; i++) {
+    if (i % 2 == 0) {
+        printf("%d is even\n", i);
+    } else {
+        printf("%d is odd\n", i);
+    }
+}
+</pre>
+<p>How many times is "even" printed?</p>
+<input type="text" id="answer8" class="answer-input">
+<button onclick="checkAnswer(8, 5)" class="submit-button">Submit</button>
+<span id="result8"></span>
+
+
+<h3>Example 9: Nested If-Else</h3>
+<pre>
+int x = 15;
+if (x > 10) {
+    if (x % 2 == 0) {
+        x = x / 2;
+    } else {
+        x = x * 2;
+    }
+} else {
+    x = 0;
+}
+</pre>
+<p>What is the final value of x?</p>
+<input type="text" id="answer9" class="answer-input">
+<button onclick="checkAnswer(9, 30)" class="submit-button">Submit</button>
+<span id="result9"></span>
+
+<h3>Example 10: For Loop with Break Statement</h3>
+<pre>
+int sum = 0;
+for (int i = 1; i <= 10; i++) {
+    if (sum > 20) break;
+    sum += i;
+}
+</pre>
+<p>At which value of i does the loop terminate?</p>
+<input type="text" id="answer10" class="answer-input">
+<button onclick="checkAnswer(10, 6)" class="submit-button">Submit</button>
+<span id="result10"></span>
+
+    <script>
+        function checkAnswer(questionNum, correctAnswer) {
+            var answer = document.getElementById("answer" + questionNum).value;
+            var resultElement = document.getElementById("result" + questionNum);
+            if (answer == correctAnswer) {
+                resultElement.innerHTML = "Correct"; //"✔️";
+                resultElement.className = "correct";
+            } else {
+                resultElement.innerHTML = "Wrong"; //"❌";
+                resultElement.className = "incorrect";
+            }
+        }
+    </script>
+</body>
+</html>
